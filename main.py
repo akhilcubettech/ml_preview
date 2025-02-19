@@ -11,7 +11,7 @@ load_dotenv()
 
 
 
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 if "session_id" not in session_state:
     session_state["session_id"] = str(uid())
